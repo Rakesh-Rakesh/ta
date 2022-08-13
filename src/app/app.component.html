@@ -9,24 +9,29 @@ Angular TaskManager
 <div class="collapse navbar-collapse" id="mynav">
     <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-            <a class="nav-link" href="#">Dashboard</a>
+            <a class="nav-link"  routerLink="dashboard">Dashboard</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link"  routerLink="about">About</a>
         </li>
     </ul>
+</div>
     <form class="form-iniine my-2 my-lg-0">
         <div class="input-group">
             <div class="input-group-prepend">
                 <span class="input-group-text" id="search"><i class="fa fa-search"></i></span>
             </div>
+           
             <input type="text" class="form-control" placeholder="Search">
+       
         </div>
-        <button class="btn btn-warning my2-my-sm-0" type="button">Search</button>
+       <button class="btn btn-warning my2-my-sm-0" type="button">Search</button>
+       
     </form>
-</div>
+
 </nav>
 <div class="container-fluid">
-<h1>Welcome to Angular</h1>
-<h2>Hello</h2>
+<router-outlet></router-outlet>
+
 </div>
+
